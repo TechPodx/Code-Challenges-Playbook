@@ -4,7 +4,7 @@ Please note that this is not a mobile-responsive website. It is designed for gen
 
 ## Preview
 
-![Gradient Color Generator Preview](link-to-screenshot-or-gif)
+![Gradient Color Generator Preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/755e1b779dea471d2b8701aa625ea006a867266c/Random%20Color%20Generator/PreviewImg.png)
 
 ## Important Note
 
