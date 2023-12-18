@@ -16,7 +16,7 @@ img{
   top: 2.5rem;
   margin: 0;
   width: 90%;
-  height: 40vw;
+  height: 100%;
   background: linear-gradient(to right bottom, #DF826C, #F8FFD2, #8ADAB2, #D0F288);
   border: solid black 2px;
   border-radius: 2rem;
@@ -64,6 +64,7 @@ p{
   color: white;
   display: block;
   margin: 0 auto;
+  margin-bottom: 3rem;
   border-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito';
