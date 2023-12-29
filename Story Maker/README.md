@@ -6,7 +6,7 @@ Welcome to Story Maker, a simple web-based game that allows you to create and ex
 
 ## Preview
 
-![Preview]()
+![Preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/a086988f9c6950020000a4ca6f0eb6952c54f3a4/Story%20Maker/Resources/Preview/Preview.gif)
 
 ## Usage
 
