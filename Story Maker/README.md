@@ -8,6 +8,8 @@ Welcome to Story Maker, a simple web-based game that allows you to create and ex
 
 ![Preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/a086988f9c6950020000a4ca6f0eb6952c54f3a4/Story%20Maker/Resources/Preview/Preview.gif)
 
+## Used HTML | CSS | JS
+
 ## Usage
 
 1. **Fill in the Required Information:**
@@ -28,6 +30,7 @@ Welcome to Story Maker, a simple web-based game that allows you to create and ex
     - **Home Page:** Return to the home page to create another story.
     - **Based Story:** View a based story for comparison.
 
-Feel free to explore different combinations of input to see how they affect the outcome of your story. Enjoy the storytelling experience!.
+
+Feel free to explore different combinations of input to see how they affect the outcome of your story.
 
 Happy storytelling! 📖✨
