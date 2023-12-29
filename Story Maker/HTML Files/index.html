@@ -3,44 +3,114 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Form a Story</title>
   </head>
   <body>
     <section id="top">
-      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+      <h1 id="first-part">FORM A</h1>
+      <img class="middle-img" src="../Resources/Img1.jpg" alt="Form A Story Logo">
+      <h1 id="second-part">STORY</h1>
+      <div id="side-images">
+        <img id="side-img1" src="../Resources/Img5.jpg" alt="dragon with two children">
+        <img id="side-img2" src="../Resources/Img2.jpg" alt="baloon is floating">
+      </div>
+      
     </section>
 
     <section id="main">
-      <h1>Complete the Form -<br> Complete the Story!</h1>
-      <hr>
-      <!--Add your form below:-->
-      <form action="story.html" method="GET">
-        <lable for="animal-1">Animal:</lable>
-        <input id="animal-1" type="text" name="animal-1" required>
-        <br>
-        <lable for="animal-2">Another Animal:</lable>
-        <input id="animal-2" type="text" name="animal-2" required>
-        <br>
-        <lable for="animal-3" >One More Animal:</lable>
-        <input id="animal-3" type="text" name="animal-3" required>
-        <br>
-        <label for="adj-1">Adjective (ends in -ed):</label>
-        <input id="adj-1" name="adj-1" type="text" required>
-        <br>
-        <label for="verb-1" >Verb (ends in -ing):</label>
-        <input id="verb-1" name="verb-1" type="text" required>
-        <br>
-        <label for="num-1">Number:</label>
-        <input id="num-1" name="num-1" type="number" required>
-        <br>
-        <span>Yes or No:</span>
-        <input id="yes" type="radio" name="answer" value="yes" required>
-        <label for="yes">Yes</label>
-        <input id="no" type="radio" name="answer" value="no" required>
-        <label for="no">No</label>
-        <br>
-        <input type="submit" value="Form My Story!">
+      <div id="animal-container">
+        <div class="animals">
+          <img class="monkey anim" src="../Resources/Animals/monkey.png" alt="monkey">
+          <img class="rat anim" src="../Resources/Animals/rat.png" alt="rat">
+          <img class="pig anim" src="../Resources/Animals/pig.png" alt="pig">
+          <img class="dog anim" src="../Resources/Animals/dog.png" alt="dog">
+          <img class="dragon anim" src="../Resources/Animals/dragon.png" alt="dragon">
+        </div>
+        <h1>COMPLETE THE STORY</h1>
+        <div class="animals">
+          <img class="bull anim" src="../Resources/Animals/bull.png" alt="bull">
+          <img class="horse anim" src="../Resources/Animals/horse.png" alt="horse">
+          <img class="rabbit anim" src="../Resources/Animals/rabbit.png" alt="rabbit">
+          <img class="snake anim" src="../Resources/Animals/snake.png" alt="snake">
+          <img class="lion anim" src="../Resources/Animals/lion.png" alt="lion">
+        </div>
+      </div>
+
+      <!--form structure-->
+      <form id="form-container" action="./story.html" method="GET">
+        <div class="field-container">
+          <label for="animal-1">Animal :</label>
+          <input placeholder="Enter first animal name" id="animal-1" type="text" name="animal-1" required>
+        </div>
+
+        <div class="field-container">
+          <label for="animal-1">Animal :</label>
+          <input placeholder="Enter second animal name" id="animal-1" type="text" name="animal-1" required>
+        </div>
+                  
+        <div class="field-container">
+          <label for="animal-2">Another Animal :</label>
+          <input placeholder="Enter thrid animal name" id="animal-2" type="text" name="animal-2" required>
+        </div>
+                  
+        <div class="field-container">
+          <label for="animal-3" >One More Animal :</label>
+          <input placeholder="Enter one more animal name" id="animal-3" type="text" name="animal-3" required>
+        </div>
+        
+        <div class="field-container">
+          <label for="adj-1">Adjective (ends in -ed) :</label>
+          <input placeholder="Enter an adjective" id="adj-1" name="adj-1" type="text" required>
+        </div>
+                  
+        <div class="field-container">
+          <label for="verb-1" >Verb (ends in -ing) :</label>
+          <input placeholder="Enter a verb" id="verb-1" name="verb-1" type="text" required>
+        </div>
+                  
+        <div class="field-container">
+          <label for="num-1">Number :</label>
+          <input placeholder="Enter a number" id="num-1" name="num-1" type="number" required>
+        </div>
+                
+        <div class="field-container">
+          <span>Yes or No :</span>
+          <div id="radio-Btn-Container">
+            <input id="yes" type="radio" name="answer" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="answer" value="no" required>
+            <label for="no">No</label>
+          </div>                
+        </div>         
+        
+        <div class="field-container drop-down-list">
+          <label for="speed">Relative speed (ends in -er) :</label>
+          <select id="speed" name="speed" required>
+            <option value="very slow">Very Slow</option>
+            <option value="slow">Slow</option>
+            <option value="average">Average</option>
+            <option value="fast">Fast</option>
+          </select>    
+        </div>
+                
+        <div class="field-container">
+          <label for="quote">Motivational Quote :</label>
+          <input placeholder="Enter motivational quote" id="quote" name="quote" type="text" list="quote-choices" minlength="5" maxlength="50" required>
+          <datalist id="quote-choices">
+            <option value="The winner gets ice cream"></option>
+            <option value="The winner will be the king!"></option>
+            <option value="The winner will get favorite food!"></option>
+          </datalist>     
+        </div>          
+        
+        <div id="textarea">
+          <label for="message">Meaningful Message :</label>
+          <textarea placeholder="Enter something meaningful" name="message" id="message" cols="40" rows="8"></textarea>
+        </div>
+          
+        <div id="button">
+          <input type="submit" value="Form My Story!">
+        </div> 
       </form>
     </section>
   </body>
