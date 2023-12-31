@@ -1,3 +1,4 @@
+/* fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
@@ -5,12 +6,17 @@ body {
     margin: 0px;
     padding:40px 0px;
     font-family: 'Open Sans', sans-serif;
+    user-select: none;
+    cursor: default;
 }
 
 /** header styles **/
 header {
-    background-image: url(https://images.unsplash.com/photo-1426869884541-df7117556757?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+    background-image: url(./Resources/img1.jpg);
     background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 75%;
     height: 450px;
     margin: 0 auto;
     position: relative;
@@ -35,9 +41,9 @@ header {
 h1 {
     color: #ffffff;
     font-family: 'Lobster', sans-serif;
-    font-size: 80px;
+    font-size: 150px;
     margin: 0px;
-    padding-top: 12%;
+    padding-top: 8%;
     text-align: center;
     z-index: 2;
 }
