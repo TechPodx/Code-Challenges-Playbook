@@ -4,4 +4,4 @@ This is a demostration of sample page food receipy page
 
 # Preview
 
-![Preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/14700bc015d036f7c751ae2c18c641bae75ddf91/Simple%20food%20recipe%20page/Preview/Preview.gif)
+![Preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/702e2fcbc226146e23b30512edc781766f1840f1/Simple%20food%20recipe%20page/Preview/Preview.gif)
