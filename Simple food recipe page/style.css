@@ -185,12 +185,12 @@ li {
   top: 10;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 30px;
 }
 
 .search {
     width: 100%;
     position: relative;
-    margin-top: 20px;
 }
 .searchTerm {
     float: left;
