@@ -4,5 +4,5 @@ This tool generates salary trends in the IT industry. The predefined salary data
 
 # Preview
 
-![preview]()
+![preview](https://github.com/TechPodx/Code-Challenges-Playbook/blob/facce3ea989a120fe93e58e24953e182a2d84e30/Salary%20Trends%20Explorer/preview/Preview.gif)
 
