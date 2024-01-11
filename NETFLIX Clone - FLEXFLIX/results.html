@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexFlix</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="x-icon" href="./Resources/Images/title_logo.png">
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="./public/style.css">
+  <!-- scripts -->
+  <script defer src="./public/helpers.js"></script>
+  <script defer src="./public/script.js"></script>
+</head>
+<body>
+  <header>
+    <header>
+      <nav>
+        <div id="logo">
+          <h1>FlexFlix</h1>
+        </div>
+        <div id ="genreForm">
+          <select name="genres" id="genres">
+            <option value="" disabled selected>Brows Movies</option>
+          </select>
+        </div>
+        <div class="header-buttons">
+          <button id="playBtn">Search</button>
+          <button>Sign In</button>
+        </div>
+      </nav>
+    </header>
+  </header>
+
+
+  <div id="movieInfo">
+    <div id="moviePoster"></div>
+    <div id="movieText"></div>
+  </div>
+  <div id="likeOrDislikeBtns" hidden>
+    <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+    <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+  </div>
+
+  
+  
+</body>
+</html>
