@@ -1,7 +1,7 @@
 # Simple React Video Player
 #### Date: 22/01/2024
 
-This simple video player has made using three React components. It will change the video content according to the selection you made.
+This simple video player is built using three React components. It dynamically changes the video content based on the selection you make.
 
 ## Preview
 
