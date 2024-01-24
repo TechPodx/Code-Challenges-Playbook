@@ -1,0 +1,67 @@
+.header {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 35px;
+}
+
+#logoImage {
+  background-image: url(../Images/logo.png);
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#logoImage:hover {
+  transform: scale(1.05);
+}
+
+.header h1 {
+  color: #FE7A36;
+  transition: 0.3s;
+}
+
+.header h1:hover {
+  color: #FF004D;
+}
+
+/* Media query */
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+
+  .header {
+    margin-bottom: 1.5em;
+  }
+
+  .header h1 {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+  }
+
+  #logoImage {
+    background-image: none;
+    width: 0;
+    height: 0;
+    background-position: 0%;
+    background-size: 0%;
+    background-repeat: unset;
+    transition: none;
+  }
+
+  #logo {
+    column-gap: 0px;
+    margin-bottom: 20px;
+  }
+
+}
