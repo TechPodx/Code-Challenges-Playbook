@@ -2,6 +2,10 @@
 
 The application displays products from the online store and allow the user to add them to their cart. In the cart, the user can adjust the quantity of each item and the running total will be displayed at the bottom. Lastly, the user can choose the currency for the entire application.
 
+## Preview
+
+![preview](./public/Previe.gif)
+
 ### This application has three slices of state
 
 - inventory: An array of objects representing the items that are available to purchase.
