@@ -4,7 +4,7 @@ The app allows you to set budgets for various categories, such as food and trans
 
 ## Preview
 
-![preview]()
+![preview](./public/Preview.gif)
 
 ## How It Works
 
