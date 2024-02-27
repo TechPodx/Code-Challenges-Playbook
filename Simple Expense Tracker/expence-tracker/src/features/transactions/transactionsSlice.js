@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 export const CATEGORIES = [
   "housing",
   "food",
@@ -13,7 +15,27 @@ const initialState = Object.fromEntries(
   CATEGORIES.map((category) => [category, []])
 );
 
-export const addTransaction = (transaction) => {
+const transactionsSlice = createSlice({
+  name: "transactions",
+  initialState: initialState,
+  reducers: {
+    addTransaction: (state, action) => {
+      const { category } = action.payload;
+      state[category].push(action.payload);
+    },
+    deleteTransaction: (state, action) => {
+      const { category, id } = action.payload;
+      state[category] = state[category].filter(
+        (transaction) => transaction.id !== id
+      );
+    },
+  },
+});
+
+// Since I have used createSlice method, I am gonna commented out
+// manual action creators and reducers
+
+/* export const addTransaction = (transaction) => {
   return {
     type: "transactions/addTransaction",
     payload: transaction,
@@ -25,13 +47,13 @@ export const deleteTransaction = (transaction) => {
     type: "transactions/deleteTransaction",
     payload: transaction,
   };
-};
+}; */
 
 export const selectTransactions = (state) => state.transactions;
 export const selectFlattenedTransactions = (state) =>
   Object.values(state.transactions).reduce((a, b) => [...a, ...b], []);
 
-const transactionsReducer = (state = initialState, action) => {
+/* const transactionsReducer = (state = initialState, action) => {
   let newTransactionsForCategory;
   switch (action.type) {
     case "transactions/addTransaction":
@@ -57,6 +79,7 @@ const transactionsReducer = (state = initialState, action) => {
     default:
       return state;
   }
-};
+};*/
 
-export default transactionsReducer;
+export const { addTransaction, deleteTransaction } = transactionsSlice.actions;
+export default transactionsSlice.reducer;
